@@ -11,9 +11,9 @@ document.getElementById("search-btn").addEventListener("click", function () {
 });
 
 function displayTeams(datas) {
-  console.log(datas)
+  console.log(datas);
   document.getElementById("teams").textContent = "";
-  for(const data of datas){
+  for (const data of datas) {
     const teams = document.getElementById("teams");
     const div = document.createElement("div");
     div.classList.add("col");
@@ -38,7 +38,7 @@ function loadTeamDetails(teamId) {
 }
 
 function displayTeamDetails(data) {
-  document.getElementById("see-details").innerText = '';
+  document.getElementById("see-details").innerText = "";
   const detailsBox = document.getElementById("see-details");
   const div = document.createElement("div");
   div.classList.add("d-md-flex", "d-block");
